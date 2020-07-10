@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <nav>
+        <div class="container main-nav">
+          <a href="./index.html">
+            <svg width="153px" height="30px">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <ul class="site-nav">
+            <li class="site-nav-item">
+              <a href="" class="menu menu2">Студия</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="menu">Портфолио</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="" class="menu">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="site-nav-1">
+            <li class="site-nav-address">
+              <a href="mailto:info@devstudio.com" class="link"
+                ><svg class="contacts-svg" width="16px" height="11px">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="site-nav-address">
+              <a href="tel:+380961111111" class="link"
+                ><svg class="contacts-svg" width="10px" height="15px">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Тело сайта -->
+
+    <main>
+      <!-- Первый блок -->
+
+      <section class="big-img">
+        <div class="hero">
+          <h1 class="white-title">эффективные решения для вашего бизнеса</h1>
+          <a class="button" href="">Заказать услугу</a>
+        </div>
+      </section>
+
+      <!--Модальное окно---->
+      <form class="form js-form">
+        <div class="form-filed">
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-filed">
+          <label for="name">Телефон</label>
+          <input type="tel" name="name" id="tel" />
+        </div>
+        <div class="form-filed">
+          <label for="name">Почта</label>
+          <input type="text" name="mail" id="mail" />
+        </div>
+        <div class="form-filed">
+          <label for="comment">Комментарий</label>
+          <input type="text" name="comment" id="comment" />
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+      <!-- Второй блок -->
+      <section class="container-our-proses container">
+        <ul class="ul-position">
+          <li class="what-we-do">
+            <div class="what-we-do-icons">
+              <svg width="70px" height="70px">
+                <use href="./images/sprite.svg#icon1"></use>
+              </svg>
+            </div>
+            <h3 class="proses">Внимание к деталям</h3>
+            <p class="proses-description">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="what-we-do">
+            <div class="what-we-do-icons">
+              <svg width="70px" height="70px">
+                <use href="./images/sprite.svg#icon2"></use>
+              </svg>
+            </div>
+            <h3 class="proses">Пунктуальность</h3>
+            <p class="proses-description">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="what-we-do">
+            <div class="what-we-do-icons">
+              <svg width="70px" height="70px">
+                <use href="./images/sprite.svg#icon3"></use>
+              </svg>
+            </div>
+            <h3 class="proses">Планирование</h3>
+            <p class="proses-description">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="what-we-do">
+            <div class="what-we-do-icons">
+              <svg width="70px" height="70px">
+                <use href="./images/sprite.svg#icon4"></use>
+              </svg>
+            </div>
+            <h3 class="proses">Современные технологии</h3>
+            <p class="proses-description">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Третий блок -->
+
+      <section class="container-what-we-do container">
+        <h3 class="title">Чем мы занимаемся</h3>
+        <ul class="ul-position">
+          <li class="our-work">
+            <img src="./images/small_img1.jpg" alt="" />
+            <h4 class="white-description">Десктопные приложения</h4>
+          </li>
+          <li class="our-work">
+            <img src="./images/small_img2.jpg" alt="" />
+            <h4 class="white-description">Мобильные приложения</h4>
+          </li>
+          <li class="our-work">
+            <img src="./images/small_img3.jpg" alt="" />
+            <h4 class="white-description">Дизайнерские решения</h4>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Четверый блок -->
+      <div class="color">
+        <section class="container">
+          <h3 class="title">Наша команда</h3>
+          <!-- <h4></h4> -->
+          <ul class="ul-position">
+            <li class="what-we-do card-color">
+              <img src="./images/photo1.jpg" alt="" />
+              <h5 class="names">John Smith</h5>
+              <p class="profession">Product Designer</p>
+              <ul class="container-2">
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg class="social-ellipse-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#social1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#social2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20px" height="20">
+                      <use href="./images/sprite.svg#social3"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#social4"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="what-we-do card-color">
+              <img src="./images/photo2.jpg" alt="" />
+              <h5 class="names">Marta Stewart</h5>
+              <p class="profession">Frontend Developer</p>
+              <ul class="container-2 icons-margin">
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg class="social-ellipse-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#social1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg class="social-ellipse-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#social2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20px" height="20">
+                      <use href="./images/sprite.svg#social3"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#social4"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="what-we-do card-color">
+              <img src="./images/photo3.jpg" alt="" />
+              <h5 class="names">Robert Jakis</h5>
+              <p class="profession">Marketing</p>
+              <ul class="container-2">
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg class="social-ellipse-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#social1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg class="social-ellipse-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#social2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20px" height="20">
+                      <use href="./images/sprite.svg#social3"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#social4"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="what-we-do card-color">
+              <img src="./images/photo4.jpg" alt="" />
+              <h5 class="names">Martin Doe</h5>
+              <p class="profession">UI Designer</p>
+              <ul class="container-2">
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg class="social-ellipse-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#social1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg class="social-ellipse-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#social2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20px" height="20">
+                      <use href="./images/sprite.svg#social3"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="portfolio-icons">
+                  <a href="" class="social-ellipce">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#social4"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!--Пятый блок-->
+      <section class="container-our-clients container">
+        <h3 class="title">Постоянные клиенты</h3>
+        <ul class="ul-position">
+          <li class="client">
+            <a href="" class="client-icons-item">
+              <svg width="45px" height="50">
+                <use href="./images/sprite.svg#client1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client">
+            <a href="" class="client-icons-item">
+              <svg width="40px" height="52px">
+                <use href="./images/sprite.svg#client2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client">
+            <a href="" class="client-icons-item">
+              <svg width="41px" height="43px">
+                <use href="./images/sprite.svg#client3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client">
+            <a href="" class="client-icons-item">
+              <svg width="80px" height="42px">
+                <use href="./images/sprite.svg#client4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client">
+            <a href="" class="client-icons-item">
+              <svg width="60px" height="47px">
+                <use href="./images/sprite.svg#client5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client">
+            <a href="" class="client-icons-item">
+              <svg width="88px" height="45px">
+                <use href="./images/sprite.svg#client6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="container footer-icon">
+        <section>
+          <a href="./index.html">
+            <svg class="web-studio" width="129px" height="26px">
+              <use href="./images/sprite.svg#logo-white"></use>
+            </svg>
+          </a>
+          <address>
+            <ul>
+              <li class="address">
+                г. Киев, пр-т Леси Украинки, 26
+              </li>
+              <li>
+                <a href="mailto:info@example.com" class="info"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="info">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </section>
+        <section>
+          <p class="join">присоединяйтесь</p>
+          <ul class="container-2 footer-icon-margin">
+            <li class="portfolio-icons">
+              <a href="" class="footer_ellipse">
+                <svg width="20px" height="20px">
+                  <use href="./images/sprite.svg#footer_ellipse1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="portfolio-icons">
+              <a href="" class="footer_ellipse">
+                <svg width="20px" height="20px">
+                  <use href="./images/sprite.svg#footer_ellipse2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="portfolio-icons">
+              <a href="" class="footer_ellipse">
+                <svg width="20px" height="20px">
+                  <use href="./images/sprite.svg#footer_ellipse3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="portfolio-icons">
+              <a href="" class="footer_ellipse">
+                <svg width="20px" height="20px">
+                  <use href="./images/sprite.svg#footer_ellipse4"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <p class="year">2020 | Developed by GoIT Students</p>
+    </footer>
+  </body>
+</html>
