@@ -61,30 +61,85 @@
       <section class="big-img">
         <div class="hero">
           <h1 class="white-title">эффективные решения для вашего бизнеса</h1>
-          <a class="button" href="">Заказать услугу</a>
+          <button class="button" data-modal-open>Заказать услугу</a>
         </div>
-      </section>
+   
 
       <!--Модальное окно---->
-      <form class="form js-form">
-        <div class="form-filed">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div class="form-filed">
-          <label for="name">Телефон</label>
-          <input type="tel" name="name" id="tel" />
-        </div>
-        <div class="form-filed">
-          <label for="name">Почта</label>
-          <input type="text" name="mail" id="mail" />
-        </div>
-        <div class="form-filed">
-          <label for="comment">Комментарий</label>
-          <input type="text" name="comment" id="comment" />
-        </div>
-        <button type="submit">Отправить</button>
-      </form>
+
+      <div class="backdrop is-hidden" data-modal>
+
+        <form  class="form">
+          
+          <button class="cancel-btn" data-modal-close>
+            <svg class="cancel-icon">
+              <use href="./images/sprite2.svg#cross"></use>
+            </svg>
+          </button>
+
+          <p class="leave-your-information">
+            Оставьте свои данные, мы вам перезвоним
+          </p>      
+
+          <div class="form-filed">
+            <input
+              type="text"
+              placeholder=" "
+              class="form-input"
+              name="name"
+              id="name"
+            />
+            <label for="name" class="form-label">Имя</label>
+            <svg class="modal_icon form-icon">
+              <use href="./images/sprite2.svg#modal2"></use>
+            </svg>
+          </div>
+          <div class="form-filed">
+            <input
+              type="tel"
+              placeholder=" "
+              class="form-input"
+              name="tel"
+              id="tel"
+            />
+            <label for="tel" class="form-label">Телефон</label>
+            <svg class="modal_icon form-icon">
+              <use href="./images/sprite2.svg#modal1"></use>
+            </svg>
+          </div>
+          <div class="form-filed">
+            <input
+              type="text"
+              placeholder=" "
+              class="form-input"
+              name="mail"
+              id="mail"
+            />
+            <label for="mail" class="form-label">Почта</label>
+            <svg class="modal_icon form-icon">
+              <use href="./images/sprite2.svg#modal3"></use>
+            </svg>
+          </div>
+          <div class="form-filed">
+            <!-- <label for="comment" class="form-comment">Комментарий</label> -->
+            <textarea
+              placeholder="Комментарий"
+              class="comment"
+              name="comment"
+              id="comment"
+              rows="8"
+            ></textarea>
+          </div>
+          <div class="policy">
+          <input type="checkbox" class="checkbox-custom" placeholder=" " name="policy" id="policy" />
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю <a class="a-policy" href="">Условия договора</a></label
+          >
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
+         </section>
       <!-- Второй блок -->
       <section class="container-our-proses container">
         <ul class="ul-position">
@@ -362,7 +417,7 @@
     <!--footer-->
     <footer>
       <div class="container footer-icon">
-        <section>
+        <section class="footer1-margin">
           <a href="./index.html">
             <svg class="web-studio" width="129px" height="26px">
               <use href="./images/sprite.svg#logo-white"></use>
@@ -384,6 +439,7 @@
             </ul>
           </address>
         </section>
+
         <section>
           <p class="join">присоединяйтесь</p>
           <ul class="container-2 footer-icon-margin">
@@ -417,8 +473,31 @@
             </li>
           </ul>
         </section>
+
+        <section>
+          <p class="join">Подпишитесь на рассылку</p>
+          <ul class="footer-list">
+            <li>
+          <input
+            type="text"
+            placeholder="E-mail"
+            class="footer-input"
+            name="mail"
+            id="mail"
+          />
+      </li>
+            <li class="footer-margin"> <button class="button" type="submit">
+              Подписаться
+              <svg class="footer-margin" width="24px" height="24px">
+                  <use href="./images/sprite3.svg#send"></use>
+                </svg>
+            </button></li>
+          </ul>
+        </section>
       </div>
       <p class="year">2020 | Developed by GoIT Students</p>
     </footer>
+
+     <script src="./js/modal.js"></script>
   </body>
 </html>
